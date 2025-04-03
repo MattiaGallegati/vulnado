@@ -44,6 +44,7 @@ jobs:
           RESPONSE=$(curl --location 'http://api.gftaiimpact.local/ai/review' \
             --header "Authorization: Bearer ${{ env.access_token }}" \
             --form 'RunName="CodeReview"' \
+            --form 'jobName="DemoCodeReviewerGitHub"' \
             --form 'PromptId="CodeReviewer__CodeReviewer_V1_Conventions"' \
             --form 'Llm="${{ vars.LLM }}"' \
             --form 'PullRequestId="${{ github.event.pull_request.number }}"' \
