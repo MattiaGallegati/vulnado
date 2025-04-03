@@ -23,7 +23,7 @@ jobs:
             -H 'Content-Type: application/x-www-form-urlencoded' \
             -d 'client_id=ai-impact-client' \
             -d "username=administrator" \
-            -d "password=Gft@202" \
+            -d "password=Gft@2025" \
             -d "scope=openid" \
             -d "grant_type=password")
 
